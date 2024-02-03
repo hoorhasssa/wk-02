@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Areas Issues</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Verdana', sans-serif;
+            background-color: #e6fff5;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            font-size: 35px;
+        }
+
+        header {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+            padding-bottom: 60px;
+            min-height: 100%;
+            box-sizing: border-box;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul li::before {
+            content: ' \21A0'; /* Unicode character for bullet */
+            display: block;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+            margin: 10px 0;
+        }
+
+        ul li a:hover {
+            color: #0779e4;
+        }
+
+        ul li p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .footer a:hover {
+            color: #ccc;
+        }
+
+        /* Added styles for the two-column layout */
+        .content ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .content ul li {
+            flex: 0 0 45%; /* Two columns with a little gap */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content ul li::before {
+            content: ''; /* Empty content for no default bullet point */
+            display: block;
+            background-image: url('Images/agriculture.jpg'); /* Replace with your image path for the first link */
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 200px; /* Set width according to your image size */
+            height: 200px; /* Set height according to your image size */
+            margin: 0 auto 10px; /* Adjust margin as needed */
+            border-radius: 50%; /* Make the image round */
+            border: 2px solid #333; /* Add border for better visibility */
+        }
+
+        .content ul li:nth-child(2)::before {
+            background-image: url('Images/deforest.jpg'); /* Replace with your image path for the second link */
+        }
+
+        .content ul li:nth-child(3)::before {
+            background-image: url('Images/marine.jpg'); /* Replace with your image path for the third link */
+        }
+
+        .content ul li:nth-child(4)::before {
+            background-image: url('Images/world\ heritage.avif'); /* Replace with your image path for the fourth link */
+        }
+
+        .content ul li:nth-child(5)::before {
+            background-image: url('Images/sustainable\ livelihoods.jpg'); /* Replace with your image path for the fifth link */
+        }
+
+        .content ul li:nth-child(6)::before {
+            background-image: url('Images/DRYLANDS.webp'); /* Replace with your image path for the sixth link */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Name: Hoor Hassan, Student Number: 301460447 -->
+    <header>
+        <div class="container">
+            <h3>Protected Areas Issues</h3>
+        </div>
+    </header>
+
+    <div class="content container">
+        <img src="Images/landscape.jpeg" alt="Protected Areas" style="width: 100%; height: auto;display: block; margin-bottom: 20px;">
+        <p>
+            Protected areas are essential for conserving biodiversity, protecting ecosystems, and sustaining cultural heritage. They are critical in combating climate change, preserving water sources, and ensuring the survival of countless species. As global environmental challenges intensify, the importance of protected areas continues to grow, necessitating our support and understanding.
+        </p>
+        <hr>
+        <div>
+            <ul>
+                <li>
+                    <a href="https://education.nationalgeographic.org/resource/environmental-impacts-agricultural-modifications/" target="_blank">ENVIRONMENTAL IMPACTS AGRICULTURAL MODIFICATIONS</a>
+                    <p>Explore the environmental impacts of agricultural modifications.</p>
+                </li>
+                <li>
+                    <a href="https://www.worldwildlife.org/threats/deforestation-and-forest-degradation" target="_blank">DEFORESTATION AND FOREST DEGRADATION</a>
+                    <p>Learn about the threats of deforestation and forest degradation.</p>
+                </li>
+                <li>
+                    <a href="https://www.treehugger.com/do-marine-protected-areas-work-5181471" target="_blank">MARINE ECOSYSTEM</a>
+                    <p>Discover the importance and functioning of marine ecosystems.</p>
+                </li>
+                <li>
+                    <a href="https://www.lonelyplanet.com/news/new-unesco-sites-2023" target="_blank">WORLD HERITAGE-LONELY PLANETS</a>
+                    <p>Explore new UNESCO sites in 2023 with Lonely Planet's insights.</p>
+                </li>
+                <li>
+                    <a href="https://wwf.panda.org/discover/knowledge_hub/where_we_work/eastern_himalaya/solutions2/sustainable_livelihoods/" target="_blank">SUSTAINABLE LIVELIHOODS</a>
+                    <p>Understand how sustainable livelihoods contribute to conservation.</p>
+                </li>
+                <li>
+                    <a href="https://erc.europa.eu/projects-statistics/science-stories/climate-change-could-lead-dramatic-shifts-dryland-ecosystems" target="_blank">DRYLANDS ECOSYSYTEM</a>
+                    <p>Learn about the potential impacts of climate change on dryland ecosystems.</p>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <!-- Additional content can be added here -->
+    </div>
+
+    <div class="footer">
+        <p>© Hoor Hassan, Student Number: 301460447. <a href="index.html" class="back-to-home">Back to Homepage</a> </p>
+    </div>
+</body>
+
+</html>
