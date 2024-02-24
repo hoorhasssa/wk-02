@@ -1,0 +1,244 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 980px;
+    margin: auto;
+    padding: 20px;
+    background-color: #3CA6A6;
+    /* Updated background color for better contrast */
+    color: #333;
+}
+
+.banner {
+    text-align: center;
+    padding: 0px;
+    background-color: #F2E3D5;
+    margin: auto;
+    /* Light green background */
+}
+
+.banner .logo,
+.banner .product-img {
+    max-width: 100px;
+    /* Adjust based on your preference */
+    height: auto;
+    margin-top: 10px;
+}
+
+.banner h1 {
+    font-size: 24px;
+    color: #005a2c;
+    /* Dark green, matching the Live Clean brand */
+}
+
+nav {
+    margin-top: 20px;
+    background: #024959;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+div {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+    margin-top: 20px;
+}
+
+.image-thumbnails img {
+    width: 100px;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.image-thumbnails img:hover {
+    opacity: 1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.content-container {
+    display: flex;
+    background: #E6F9F8;
+    /* Softer background color for contrast and to make the flex box pop */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.image-gallery {
+    flex: 30%;
+    /* Image box takes 30% of the flex container */
+    padding: 10px;
+}
+
+.right-side-content {
+    flex: 70%;
+    /* Content takes 70% of the flex container */
+    padding: 10px;
+}
+
+/* Stretch banner image across the width of its container */
+.banner .product-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure the gallery and content are not too squeezed on smaller screens */
+@media (max-width: 1024px) {
+    .content-container {
+        flex-direction: column;
+    }
+}
+
+#galleryImage {
+    max-width: 65%;
+    height: auto;
+}
+
+.image-thumbnails img {
+    width: 100px;
+    /* Width for thumbnails */
+    margin: 0 5px;
+    /* Margin around thumbnails */
+    cursor: pointer;
+    /* Cursor indicates clickable items */
+    opacity: 0.6;
+    /* Initial opacity for a faded look */
+    transition: opacity 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.image-thumbnails img:hover {
+    opacity: 1;
+    /* Full opacity on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* New CSS for the hotspot map */
+.hotspot-map {
+    position: relative;
+    margin-top: 20px;
+    width: 90%;
+    /* Adjust max-width as needed */
+    height: auto;
+    /* Keep aspect ratio */
+    overflow: hidden;
+    /* Hide overflowing content */
+}
+
+.hotspot-map img {
+    width: 100%;
+    height: auto;
+}
+
+.hotspot {
+    position: absolute;
+}
+
+/* Styling for the hotspot links */
+.hotspot-link {
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 221, 255, 0.5);
+    /* Semi-transparent red */
+    border-radius: 50%;
+    width: 3%; /* Adjust size of hotspot based on image size */
+    height: 3%; /* Adjust size of hotspot based on image size */
+    cursor: pointer;
+}
+
+/* Positioning the hotspot links */
+.hotspot-link-ontario {
+    top: 73%;
+    left: 51%;
+}
+
+.hotspot-link-quebec {
+    top: 59%;
+    left: 60%;
+}
+
+.hotspot-link-bc {
+    top: 66%;
+    left: 13%;
+}
+
+/* Hover effect for hotspot links */
+.hotspot-link:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    /* Darker red on hover */
+}
+.footer {
+margin-top: 20px;
+text-align: center;
+font-size: 14px;
+color: #18000088;
+background-color: #F2E3D5; /* Add background color here */
+padding: 10px; /* Add padding to give some space around the content */
+}

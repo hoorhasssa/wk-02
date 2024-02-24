@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Live Clean Baby Shampoo & Wash</title>
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <a href="https://www.live-clean.com">
+            <img src="Images/Live_Clean_2021.svg" alt="Live Clean Logo" class="logo">
+        </a>
+        <h1>Live Clean Baby Gentle Moisture Tearless Shampoo & Wash</h1>
+        <img src="Images/babybanner.jpg" alt="Live Clean Baby Shampoo" class="product-img">
+    </div>
+
+    <!-- Navigation Links -->
+    <nav>
+        <a href="index.html">Home Page</a> |
+        <a href="Details.html">View Larger Picture</a>
+    </nav>
+
+    <div class="content-container">
+        <!-- Image Gallery -->
+        <div class="image-gallery">
+            <img id="galleryImage" src="Images/liveclean.jpg" alt="Gallery Image">
+            <div class="image-thumbnails">
+                <img onclick="changeImage('Images/liveclean.jpg')" src="Images/liveclean.jpg" alt="Thumbnail">
+                <img onclick="changeImage('Images/liveclean2.jpg')" src="Images/liveclean2.jpg" alt="Thumbnail">
+                <!-- Add more thumbnails as needed -->
+            </div>
+        </div>
+
+        <!-- Right-Side Content -->
+        <div class="right-side-content">
+            <!-- Product Description and Details -->
+            <div>
+                <h2>Product Description</h2>
+                <p>This Live Clean Baby Gentle Moisture Tearless Shampoo & Wash is specially formulated to gently cleanse
+                    your baby's delicate skin and hair without drying. It's tear-free and mild enough for daily use,
+                    leaving your baby's skin feeling soft and smooth.</p>
+                <h2>Price Table</h2>
+                <table>
+                    <tr>
+                        <th>Size</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>250ml</td>
+                        <td>$5.99</td>
+                    </tr>
+                    <tr>
+                        <td>500ml</td>
+                        <td>$9.99</td>
+                    </tr>
+                    <tr>
+                        <td>1 liter</td>
+                        <td>$14.99</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Embeded Map (Simplified Example) -->
+            <div class="Hotspot-map">
+                <!-- Heading for the hotspot map -->
+                <h2>Hotspot Map</h2>
+                <!-- Canada Map Image -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3558311.1270117876!2d-80.72072090991777!3d42.914153892315795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHain%20Celestial!5e0!3m2!1sen!2sca!4v1708732121573!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeImage(src) {
+            document.getElementById('galleryImage').src = src;
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© Hoor Hassan, Student Number: 301460447. Assignment 3 submission.</p>
+    </div>
+</body>
+
+</html>
