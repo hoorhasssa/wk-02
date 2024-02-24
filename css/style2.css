@@ -5,7 +5,7 @@ padding: 20px;
 background-color: #e6e5eb;
 }
 .container {
-border: 2px solid #4e4a5e;
+border: 2px solid #bdb9cd;
 padding: 80px;
 margin-top: 2Opx;
 }
@@ -15,20 +15,59 @@ table {
     border-collapse: collapse;
 }
 
+
 th, td {
-    border: 1px solid rgb(34, 31, 31);
+    border: 1px solid rgb(163, 154, 154);
     padding: 8px;
     text-align: center;
 }
 
 th {
-    background-color: #2d2b37; /* light gray */
+    background-color: #acaab6; /* light gray */
 }
 
 tr:nth-child(even) {
-    background-color: #3c3142; /* lighter gray for even rows */
+    background-color: #958c9a; /* lighter gray for even rows */
 }
 
 tr:nth-child(odd) {
-    background-color: #2e283e; /* slightly darker gray for odd rows */
+    background-color: #a29eac; /* slightly darker gray for odd rows */
 }
+.table {
+    width: 100%; /* Ensure the table stretches to the container width */
+    background-image: url('path/to/your/meme.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire area of the table */
+    background-position: center; /* Center the background image */
+}
+/* Align text left for all th elements */
+th {
+    text-align: left;
+}
+
+/* Align text left for all td elements */
+td {
+    text-align: left;
+}
+
+.title-row {
+    text-align: center;
+}
+
+table {
+    width: 100%; /* Adjust the table width as needed */
+    border-collapse: collapse; /* Optional: For styling */
+  }
+  
+  .title-row {
+    text-align: center; /* Center-align the title */
+    /* Additional styling */
+    font-weight: bold; /* Make the title bold */
+    padding: 80px; /* Add some padding around the title for spacing */
+    background-color: #f0f0f0; /* Optional: background color for the title row */
+  }
+  
+  td, th {
+    border: 1px solid #ddd; /* Optional: Add borders to table cells */
+    padding: 8px; /* Padding inside cells */
+  }
+  
