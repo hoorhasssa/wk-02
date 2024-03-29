@@ -1,0 +1,83 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Evaluation Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a href="https://www.centennialcollege.ca/">
+    <img src="college_logo.png" alt="Centennial College Logo">
+  </a>
+</header>
+
+<main>
+  <form action="submit_evaluation.php" method="post">
+    <h1>Continuing Education Course Evaluation</h1>
+    <div class="form-section">
+      <label for="courseName">Course Name/Code:</label>
+      <input type="text" id="courseName" name="courseName">
+      
+      <label for="semester">Semester:</label>
+      <select id="semester" name="semester">
+        <option value="fall">Fall</option>
+        <option value="winter">Winter</option>
+        <option value="spring_summer">Spring/Summer</option>
+      </select>
+      
+      <label for="year">Year:</label>
+      <input type="text" id="year" name="year">
+      
+      <label for="instructor">Instructor:</label>
+      <input type="text" id="instructor" name="instructor">
+    </div>
+
+    <!-- Instructor Evaluation Section -->
+    <div class="form-section">
+      <h2>Instructor</h2>
+      <!-- Repeat for each question with appropriate input types -->
+      <label>1. Knowledge of subject:</label>
+      <!-- ... -->
+    </div>
+
+    <!-- Course Evaluation Section -->
+    <div class="form-section">
+      <h2>Course</h2>
+      <!-- Repeat for each question with appropriate input types -->
+      <label>6. How would you rate the course materials?</label>
+      <!-- ... -->
+    </div>
+
+    <!-- General Information Section -->
+    <div class="form-section">
+      <h2>General Information</h2>
+      <!-- Repeat for each question with appropriate input types -->
+      <label>9. Was the course outline reviewed at the beginning of the course?</label>
+      <!-- ... -->
+    </div>
+
+    <!-- Other Comments Section -->
+    <div class="form-section">
+      <h2>Any Other Comments</h2>
+      <textarea id="comments" name="comments"></textarea>
+    </div>
+
+    <!-- Submission Section -->
+    <div class="form-section">
+      <input type="submit" value="Submit Evaluation">
+    </div>
+  </form>
+</main>
+
+<footer>
+  <p>Thank you! We pay attention to your feedback!</p>
+  <a href="mailto:continuingeducation@centennialcollege.ca">Email: continuingeducation@centennialcollege.ca</a>
+</footer>
+
+</body>
+</html>
+
