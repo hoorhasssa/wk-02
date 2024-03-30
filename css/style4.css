@@ -1,0 +1,138 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #9f7b7b; /* Soft pink background, assumed from the image */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-image: url('../Images/centennialimage.jpg'); /* Replace with the actual path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 180px; /* Adjust the height as needed */
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #FFD6D6; /* Lighter pink for the navbar, assumed from the image */
+  overflow: hidden;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #FABABA; /* Slightly darker pink on hover */
+}
+
+form {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 10px; /* Rounded corners for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+  color: #333;
+  text-align: center;
+}
+
+.form-section {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #555; /* Darker font color for contrast */
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 2px solid #FFC0CB; /* Soft pink border */
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px; /* Larger textarea for comments */
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+.question label {
+  background-color: #FFD6D6; /* Light pink background for question labels */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 1em;
+  background-color: #FFC0CB; /* Soft pink background */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+button:hover {
+  background-color: #9f7b7b; /* Slightly darker pink on hover */
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #FFD6D6; /* Lighter pink for the footer */
+  color: #333;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  color: #333; /* Visible divider color */
+}
