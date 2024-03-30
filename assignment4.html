@@ -8,147 +8,145 @@
 </head>
 <body>
 
-    <header></header>
+<header></header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            
-            <!-- Additional navigation links can be added here -->
-        </ul>
-    </nav>
-      
-      <form id="evaluation-form">
-        <h1>Continuing Education Course/Instructor Evaluation</h1>
-      
-        <!-- Course Information Section -->
-        <div class="form-section">
-          <label for="course-name">Course Name/Code:</label>
-          <input type="text" id="course-name" name="courseName">
-        
-          <label for="semester">Semester:</label>
-          <select id="semester" name="semester">
-            <option value="fall">Fall</option>
-            <option value="winter">Winter</option>
-            <option value="spring_summer">Spring/Summer</option>
-          </select>
-        
-          <label for="year">Year:</label>
-          <input type="text" id="year" name="year">
-        
-          <label for="instructor-name">Instructor:</label>
-          <input type="text" id="instructor-name" name="instructorName">
-        </div>
-      
-        <!-- Instructor Evaluation Section -->
-        <fieldset>
-          <legend>Instructor</legend>
-          <div class="question">
-            <p><ul><li> How would you rate the instructor's knowledge of subject?</li></ul></p>
-            <label><input type="radio" name="knowledge" value="excellent"> Excellent</label>
-            <label><input type="radio" name="knowledge" value="good"> Good</label>
-            <label><input type="radio" name="knowledge" value="fair"> Fair</label>
-            <label><input type="radio" name="knowledge" value="not_satisfactory"> Not Satisfactory</label>
-          </div>
-          <div class="question">
-            <p><ul><li> How would you rate the instructor's helpfulness?</li></ul></p>
-            <label><input type="radio" name="helpfulness" value="excellent"> Excellent</label>
-            <label><input type="radio" name="helpfulness" value="good"> Good</label>
-            <label><input type="radio" name="helpfulness" value="fair"> Fair</label>
-            <label><input type="radio" name="helpfulness" value="not_satisfactory"> Not Satisfactory</label>
-          </div>
-          <div class="question">
-            <p><ul><li> How would you rate the instructor's courtesy for all the studdents?</li></ul></p>
-            <label><input type="radio" name="courtesy" value="excellent"> Excellent</label>
-            <label><input type="radio" name="courtesy" value="good"> Good</label>
-            <label><input type="radio" name="courtesy" value="fair"> Fair</label>
-            <label><input type="radio" name="courtesy" value="not_satisfactory"> Not Satisfactory</label>
-          </div>
-          <div class="question">
-            <p><ul><li> would you rate the instructor's helpfulness?</li></ul></p>
-            <label><input type="radio" name="helpfulness" value="excellent"> Excellent</label>
-            <label><input type="radio" name="helpfulness" value="good"> Good</label>
-            <label><input type="radio" name="helpfulness" value="fair"> Fair</label>
-            <label><input type="radio" name="helpfulness" value="not_satisfactory"> Not Satisfactory</label>
-          </div>
-          <div class="question">
-            <p><ul><li> would you rate the instructor's helpfulness?</li></ul></p>
-            <label><input type="radio" name="helpfulness" value="excellent"> Excellent</label>
-            <label><input type="radio" name="helpfulness" value="good"> Good</label>
-            <label><input type="radio" name="helpfulness" value="fair"> Fair</label>
-            <label><input type="radio" name="helpfulness" value="not_satisfactory"> Not Satisfactory</label>
-          </div>
-        </fieldset>
-        
-        <!-- Course Evaluation Section -->
-        <fieldset>
-          <legend>Course</legend>
-          <div class="question">
-            <p><ul><li>How would you rate the course materials?</li></ul></p>
-            <label><input type="radio" name="materials" value="excellent">Excellent</label>
-            <label><input type="radio" name="materials" value="good"> Good</label>
-            <label><input type="radio" name="materials" value="fair"> Fair</label>
-            <label><input type="radio" name="materials" value="not_satisfactory"> Not Satisfactory</label>
-          </div>
-          <div class="question">
-            <p><ul><li>How much did this course meet your expectations?</li></ul></p>
-            <label><input type="radio" name="expectations" value="excellent">Excellent</label>
-            <label><input type="radio" name="expectations" value="good"> Good</label>
-            <label><input type="radio" name="expectations" value="fair"> Fair</label>
-            <label><input type="radio" name="expectations" value="not_satisfactory"> Not Satisfactory</label>
-          </div>
-          <div class="question">
-            <p><ul><li>How would you rate the course (overall)?</li></ul></p>
-            <label><input type="radio" name="course" value="excellent">Excellent</label>
-            <label><input type="radio" name="course" value="good"> Good</label>
-            <label><input type="radio" name="course" value="fair"> Fair</label>
-            <label><input type="radio" name="course" value="not_satisfactory"> Not Satisfactory</label>
-          </div>
-         
-        </fieldset>
-        
-        <!-- General Information Section -->
-        <fieldset>
-          <legend>General Information</legend>
-          <div class="question">
-            <p><ul><li>Was the course outline reviewed/explained at the beginning of your course?</li></ul></p>
-            <label><input type="radio" name="outline_reviewed" value="yes"> Yes</label>
-            <label><input type="radio" name="outline_reviewed" value="no"> No</label>
-            <label><input type="radio" name="outline_reviewed" value="not_sure"> Not Sure</label>
-          </div>
-          <div class="question">
-            <p><ul><li>Would you recommend this course to your friend?</li></ul></p>
-            <label><input type="radio" name="recommend" value="yes"> Yes</label>
-            <label><input type="radio" name="recommend" value="no"> No</label>
-            <label><input type="radio" name="recommend" value="not_sure"> Not Sure</label>
-          </div>
-          
-        </fieldset>
-      
-        <!-- Additional Comments Section -->
-        <div class="form-section">
-          <label for="comments"><ul><li> Any Other Comments:</li></ul></label>
-           <textarea id="comments" name="comments"></textarea>
-           <label><ul><li>What is the best thing about this course?</li></ul></label>
-           <textarea id="comments" name="comments"></textarea>
-           <label><ul><li>How could we improve this course?</li></ul></label>
-           <textarea id="comments" name="comments"></textarea>
-           <label><ul><li>Others</li></ul></label>
-           <textarea id="comments" name="comments"></textarea>
-        </div>
-      
-        <button type="submit">Submit Evaluation</button>
-      </form>
-      
-      <footer>
-        <p>Thank you! We pay attention to your feedback!</p>
-        <a href="http://www.centennialcollege.ca">www.centennialcollege.ca</a>
-        <span class="divider">|</span>
-        <a href="mailto:continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a>
-        <span class="divider">|</span>
-        <a href="index.html">Back to Home</a>
-    </footer>
-      
-      </body>
-      </html>
-      
+<nav>
+    <ul>
+        <li><a href="https://www.centennialcollege.ca/">Home</a></li>
+        <!-- Additional navigation links can be added here -->
+    </ul>
+</nav>
+  
+<form id="evaluation-form">
+    <h1>Continuing Education Course/Instructor Evaluation</h1>
+  
+    <!-- Course Information Section -->
+    <div class="form-section">
+      <label for="course-name">Course Name/Code:</label>
+      <input type="text" id="course-name" name="courseName">
+    
+      <label for="semester">Semester:</label>
+      <select id="semester" name="semester">
+        <option value="fall">Fall</option>
+        <option value="winter">Winter</option>
+        <option value="spring_summer">Spring/Summer</option>
+      </select>
+    
+      <label for="year">Year:</label>
+      <input type="text" id="year" name="year">
+    
+      <label for="instructor-name">Instructor:</label>
+      <input type="text" id="instructor-name" name="instructorName">
+    </div>
+  
+    <!-- Instructor Evaluation Section -->
+    <fieldset>
+      <legend>Instructor</legend>
+      <ol start="1">
+        <li class="question">
+          <p>How would you rate the instructor's knowledge of the subject?</p>
+          <label><input type="radio" name="knowledge" value="excellent"> Excellent</label>
+          <label><input type="radio" name="knowledge" value="good"> Good</label>
+          <label><input type="radio" name="knowledge" value="fair"> Fair</label>
+          <label><input type="radio" name="knowledge" value="poor"> Poor</label>
+        </li>
+        <li class="question">
+          <p>How would you rate the instructor's helpfulness?</p>
+          <label><input type="radio" name="helpfulness" value="excellent"> Excellent</label>
+          <label><input type="radio" name="helpfulness" value="good"> Good</label>
+          <label><input type="radio" name="helpfulness" value="fair"> Fair</label>
+          <label><input type="radio" name="helpfulness" value="poor"> Poor</label>
+        </li>
+        <li class="question">
+          <p>How would you rate the instructor's courtesy towards all the students?</p>
+          <label><input type="radio" name="courtesy" value="excellent"> Excellent</label>
+          <label><input type="radio" name="courtesy" value="good"> Good</label>
+          <label><input type="radio" name="courtesy" value="fair"> Fair</label>
+          <label><input type="radio" name="courtesy" value="poor"> Poor</label>
+        </li>
+      </ol>
+    </fieldset>
+    
+    <!-- Course Evaluation Section -->
+    <fieldset>
+      <legend>Course</legend>
+      <ol start="4">
+        <li class="question">
+          <p>How would you rate the course materials?</p>
+          <label><input type="radio" name="materials" value="excellent"> Excellent</label>
+          <label><input type="radio" name="materials" value="good"> Good</label>
+          <label><input type="radio" name="materials" value="fair"> Fair</label>
+          <label><input type="radio" name="materials" value="poor"> Poor</label>
+        </li>
+        <li class="question">
+          <p>How much did this course meet your expectations?</p>
+          <label><input type="radio" name="expectations" value="exceeded"> Exceeded</label>
+          <label><input type="radio" name="expectations" value="met"> Met</label>
+          <label><input type="radio" name="expectations" value="below"> Below Expectations</label>
+          <label><input type="radio" name="expectations" value="not_met"> Not Met At All</label>
+        </li>
+        <li class="question">
+          <p>How would you rate the course overall?</p>
+          <label><input type="radio" name="course_overall" value="excellent"> Excellent</label>
+          <label><input type="radio" name="course_overall" value="good"> Good</label>
+          <label><input type="radio" name="course_overall" value="fair"> Fair</label>
+          <label><input type="radio" name="course_overall" value="poor"> Poor</label>
+        </li>
+      </ol>
+    </fieldset>
+    
+    <!-- General Information Section -->
+    <fieldset>
+      <legend>General Information</legend>
+      <ol start="7">
+        <li class="question">
+          <p>Was the course outline reviewed/explained at the beginning of your course?</p>
+          <label><input type="radio" name="outline_reviewed" value="yes"> Yes</label>
+          <label><input type="radio" name="outline_reviewed" value="no"> No</label>
+          <label><input type="radio" name="outline_reviewed" value="not_sure"> Not Sure</label>
+        </li>
+        <li class="question">
+          <p>Would you recommend this course to a friend?</p>
+          <label><input type="radio" name="recommend" value="yes"> Yes</label>
+          <label><input type="radio" name="recommend" value="no"> No</label>
+          <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+        </li>
+      </ol>
+    </fieldset>
+    
+    <!-- Additional Comments Section -->
+    <div class="form-section">
+      <ol start="9">
+        <li>
+          <label for="comments">Any other comments:</label>
+          <textarea id="comments" name="comments"></textarea>
+        </li>
+        <li>
+          <label for="best-thing">What is the best thing about this course?</label>
+          <textarea id="best-thing" name="bestThing"></textarea>
+        </li>
+        <li>
+          <label for="improvements">How could we improve this course?</label>
+          <textarea id="improvements" name="improvements"></textarea>
+        </li>
+        <li>
+          <label for="other-comments">Others:</label>
+          <textarea id="other-comments" name="otherComments"></textarea>
+        </li>
+      </ol>
+    </div>
+  
+    <button type="submit">Submit Evaluation</button>
+</form>
+  
+<footer>
+    <p>Thank you! We pay attention to your feedback!</p>
+    <a href="http://www.centennialcollege.ca">www.centennialcollege.ca</a>
+    <span class="divider">|</span>
+    <a href="mailto:continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a>
+    <span class="divider">|</span>
+    <a href="index.html">Back to Home</a>
+</footer>
+  
+</body>
+</html>
