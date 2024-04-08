@@ -1,3 +1,10 @@
+
+.remax-header {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,46 +12,60 @@ body {
     background-color: #f5f5f5;
 }
 
-.brand-header {
-    width: 100%;
-    height: auto;
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .agent-photo {
-    width: 320px; /* Adjust as necessary */
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-header {
-    text-align: center;
+.contact-info {
+    text-align: left;
+}
+
+.contact-button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.office-info {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-content {
+    width: 70%;
     padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.profile, .specialties, .testimonials {
-    padding: 1em 2em;
-}
-
-blockquote {
-    font-style: italic;
-    color: #555;
-    margin: 0.5em 0;
+.main-content h1 {
+    color: #0056b3;
 }
 
 ul {
     list-style-type: none;
-    padding: 0;
+    padding-left: 0;
 }
 
-li::before {
+ul li:before {
     content: "• ";
-    color: #6c757d; /* bullet color */
-    font-weight: bold; /* if you want it to be bold */
-}
-
-footer {
-    background-color: #ddd;
-    padding: 1em;
-    text-align: center;
+    color: #0056b3;
+    margin-right: 5px;
 }
