@@ -1,0 +1,113 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F2F2F2; /* Light grey */
+  margin: 0;
+  padding: 0;
+  color: #404040; /* Dark grey */
+}
+
+header {
+  background-image: url('../Images/centenniallogo.png'); /* Ensure this path is correct */
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 108px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #D3D936; /* Lime green */
+  overflow: hidden;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #404040; /* Dark grey */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color:#8A8C42; /* Olive green */
+  ; /* Lime green, unchanged for hover to maintain contrast */
+}
+
+form {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #F2F2F2; /* Light grey */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h1, legend {
+  color: #404040; /* Dark grey */
+  text-align: center;
+}
+
+.form-section, label, .question label, footer {
+  margin-bottom: 1em;
+  color: #555; /* Slightly lighter grey, for contrast */
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 2px solid #8A8C42; /* Olive green */
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  width: 100%;
+  padding: 1em;
+  background-color: #8A8C42; /* Olive green */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+button:hover {
+  background-color: #404040; /* Dark grey for hover */
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #8A8C42; /* Olive green */
+  color: #404040; /* Dark grey */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #404040; /* Dark grey */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  color: #404040; /* Dark grey */
+}

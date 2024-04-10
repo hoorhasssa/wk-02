@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../css/form.css">    
+</head>
+<body>  
+    <h2>Property Inquiry Form</h2>
+    <form action="mailto:agent@example.com" method="post" enctype="text/plain">
+        First Name: <input type="text" name="firstName"><br>
+        Last Name: <input type="text" name="lastName"><br>
+        Phone: <input type="tel" name="phone"><br>
+        Email: <input type="email" name="email"><br>
+        Type of Property:
+        <select name="propertyType">
+            <option value="house">House</option>
+            <option value="condominium">Condominium</option>
+        </select><br>
+        Number of Bedrooms: <input type="number" name="bedrooms" min="1"><br>
+        Number of Bathrooms: <input type="number" name="bathrooms" min="1"><br>
+        Price Range: <input type="text" name="priceRange"><br>
+        Additional Comments:<br>
+        <textarea name="comments" rows="5" cols="30"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
