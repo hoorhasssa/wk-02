@@ -3,27 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="../css/form.css">    
+    <title>Contact Form - Real Estate Agent</title>
+    <link rel="stylesheet" href="../css/style5.css"> <!-- Link to your main stylesheet -->
+    <link rel="stylesheet" href="../css/form.css"> <!-- Link to your form-specific stylesheet -->
 </head>
-<body>  
-    <h2>Property Inquiry Form</h2>
-    <form action="mailto:agent@example.com" method="post" enctype="text/plain">
-        First Name: <input type="text" name="firstName"><br>
-        Last Name: <input type="text" name="lastName"><br>
-        Phone: <input type="tel" name="phone"><br>
-        Email: <input type="email" name="email"><br>
-        Type of Property:
-        <select name="propertyType">
-            <option value="house">House</option>
-            <option value="condominium">Condominium</option>
-        </select><br>
-        Number of Bedrooms: <input type="number" name="bedrooms" min="1"><br>
-        Number of Bathrooms: <input type="number" name="bathrooms" min="1"><br>
-        Price Range: <input type="text" name="priceRange"><br>
-        Additional Comments:<br>
-        <textarea name="comments" rows="5" cols="30"></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
+<body>
+    <div class="branding">
+        <img src="../Images/banneragent.jpeg" alt="RE/MAX Hallmark First Group Realty Ltd." class="remax-header">
+        <nav class="main-nav">
+            <a href="../FinalProject/HomePage.html" class="nav-link">Home</a>
+            <!-- Add any other links as necessary -->
+        </nav>
+    </div>
+    <div class="form-container">
+        <h2>Property Inquiry Form</h2>
+        <form action="mailto:agent@example.com" method="post" enctype="text/plain" class="property-inquiry-form">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="propertyType">Type of Property:</label>
+                <select id="propertyType" name="propertyType">
+                    <option value="house">House</option>
+                    <option value="condominium">Condominium</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" min="1">
+            </div>
+            <div class="form-group">
+                <label for="bathrooms">Number of Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" min="1">
+            </div>
+            <div class="form-group">
+                <label for="priceRange">Price Range:</label>
+                <input type="text" id="priceRange" name="priceRange">
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="5" cols="30"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="submit-button">
+            </div>
+        </form>
+    </div>
+    <footer class="site-footer">
+        <a href="../index.html" class="footer-link">Home</a> | &copy; 2024 HoorHassan. All rights reserved.
+    </footer>
 </body>
 </html>
