@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form - Real Estate Agent</title>
-    <link rel="stylesheet" href="../css/style5.css"> <!-- Link to your main stylesheet -->
-    <link rel="stylesheet" href="../css/form.css"> <!-- Link to your form-specific stylesheet -->
+    <link rel="stylesheet" href="../css/style5.css"> 
 </head>
 <body>
     <div class="branding">
         <img src="../Images/banneragent.jpeg" alt="RE/MAX Hallmark First Group Realty Ltd." class="remax-header">
         <nav class="main-nav">
-            <a href="../FinalProject/HomePage.html" class="nav-link">Home</a>
-            <!-- Add any other links as necessary -->
+            <ul>
+                <li><a href="../FinalProject/HomePage.html" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Property Listings</a>
+                    <div class="dropdown-content">
+                        <a href="../FinalProject/propertylisting1.html">Property Listing 1</a>
+                        <a href="../FinalProject/propertylisting2.html">Property Listing 2</a>
+                        <a href="../FinalProject/propertylisting3.html">Property Listing 3</a>
+                    </div>
+                </li>
+                <li><a href="../FinalProject/properties.html" class="nav-link">All Properties</a></li>
+                <li><a href="../FinalProject/form.html" class="nav-link">Contact</a></li>
+                <li><a href="../FinalProject/SiteMap.html" class="nav-link">Site Map</a></li>
+            </ul>
         </nav>
     </div>
     <div class="form-container">
         <h2>Property Inquiry Form</h2>
-        <form action="mailto:agent@example.com" method="post" enctype="text/plain" class="property-inquiry-form">
+        <form action="mailto:arthur.gun@myrealestate.com" method="post" enctype="text/plain" class="property-inquiry-form">
             <div class="form-group">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" name="firstName">
@@ -63,7 +74,7 @@
         </form>
     </div>
     <footer class="site-footer">
-        <a href="../index.html" class="footer-link">Home</a> | &copy; 2024 HoorHassan. All rights reserved.
+        <a href="../index.html" class="footer-link">Index</a> | &copy; 2024 HoorHassan. All rights reserved.
     </footer>
 </body>
 </html>
